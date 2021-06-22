@@ -77,6 +77,22 @@ const fi = (function() {
       if (param === true) return arr.flat(1);
       else return arr.flat(Infinity);
     },
+    
+     uniq: function(array, isSorted, callback) {
+      if (callback) {
+        let uniqArr = [];                                   // Has [1, 2, 3]
+        let comparingArr = array.map(callback);             // Has [1, 2, 2, 0, 1, 0, 0]
+        let toKeep = [];
+        comparingArr.map((value, index) => {
+          if (!toKeep.includes(value)) {
+            toKeep.push(value);
+            uniqArr.push(array[index]);
+          }
+        });
+        return uniqArr;
+      }
+      else return Array.from(new Set(array));
+    },
 
     functions: function() {
 
