@@ -57,6 +57,14 @@ const fi = (function() {
       for(let i = 1; i <= num; i++) lastArr.unshift(arr[arr.length - i]);
       return lastArr;
     },
+    
+     compact:  function(arr) {
+      let collection = [];
+      arr.forEach(item => {
+        if (element) collection.push(element);
+      });
+      return collection;
+    },
 
     functions: function() {
 
