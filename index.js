@@ -5,8 +5,7 @@ const fi = (function() {
     },
 
     each: function(arr, param) {
-      fi.each([1, 2, 3], alert);
-      fi.each({one: 1, two: 2, three: 3}, alert);
+      if(arr.length)
     },
 
     map: function() {
