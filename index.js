@@ -42,6 +42,13 @@ const fi = (function() {
       if (arr.length) return arr.length;
       else return Object.keys(arr).length;
     },
+    
+    first: function(arr, num) {
+      if (!num) return arr[0];
+      let firstArr = [];
+      for(let i = 0; i < num; i++) firstArr.push(arr[i]);
+      return firstArr;
+    },
 
     functions: function() {
 
