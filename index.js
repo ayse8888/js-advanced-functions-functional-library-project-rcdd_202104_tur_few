@@ -20,6 +20,7 @@ const fi = (function() {
       else {
         newArr = Object.values(arr).map(item => param(item))
       }
+      return newArr
     },
 
     reduce: function() {
