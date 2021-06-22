@@ -26,8 +26,8 @@ const fi = (function() {
     reduce: function(arr, param, acc) {
       let newArr = []
       if(acc) newArr = arr.reduce(param, acc);
-      else reduceArr = array.reduce(callback);
-      return reduceArr;
+      else newArr = array.reduce(callback);
+      return newArr;
     },
 
     functions: function() {
