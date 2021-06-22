@@ -78,10 +78,10 @@ const fi = (function() {
       else return arr.flat(Infinity);
     },
     
-     uniq: function(array, isSorted, callback) {
-      if (callback) {
-        let uniqArr = [];                                   // Has [1, 2, 3]
-        let comparingArr = array.map(callback);             // Has [1, 2, 2, 0, 1, 0, 0]
+    uniq: function(arr, isSorted, param) {
+      if (param) {
+        let uniqArr = [];                                   
+        let comparingArr = arr.map(param);           
         let toKeep = [];
         comparingArr.map((value, index) => {
           if (!toKeep.includes(value)) {
