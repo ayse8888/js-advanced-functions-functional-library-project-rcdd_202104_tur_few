@@ -93,6 +93,15 @@ const fi = (function() {
       }
       else return Array.from(new Set(arr));
     },
+    
+    
+     keys:  function(object) {
+      return Object.keys(object);
+    },
+
+    values: function(object) {
+      return Object.values(object);
+    },
 
     functions: function() {
 
