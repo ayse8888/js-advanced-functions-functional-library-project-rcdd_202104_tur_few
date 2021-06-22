@@ -86,12 +86,12 @@ const fi = (function() {
         comparingArr.map((value, index) => {
           if (!toKeep.includes(value)) {
             toKeep.push(value);
-            uniqArr.push(array[index]);
+            uniqArr.push(arr[index]);
           }
         });
         return uniqArr;
       }
-      else return Array.from(new Set(array));
+      else return Array.from(new Set(arr));
     },
 
     functions: function() {
