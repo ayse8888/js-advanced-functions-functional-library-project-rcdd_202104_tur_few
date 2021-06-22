@@ -58,12 +58,19 @@ const fi = (function() {
       return lastArr;
     },
     
-     compact:  function(arr) {
+    compact:  function(arr) {
       let compactArr = [];
       arr.forEach(item => {
         if (item) compactArr.push(item);
       });
       return compactArr;
+    },
+    
+    
+    sortBy:  function(arr, param) {
+      let sortByArr = [...arr];
+      sortByArr.sort((a, b) => param(a) - param(b));
+      return sortByArr;
     },
 
     functions: function() {
