@@ -37,6 +37,11 @@ const fi = (function() {
     filter: function(arr, param) {
       return arr.filter(param);
     },
+    
+    size: function(arr) {
+      if (arr.length) return arr.length;
+      else return Object.keys(arr).length;
+    },
 
     functions: function() {
 
