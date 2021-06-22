@@ -73,9 +73,9 @@ const fi = (function() {
       return sortByArr;
     },
     
-     flatten:  function(array, shallow) {
-      if (shallow === true) return array.flat(1);
-      else return array.flat(Infinity);
+     flatten:  function(arr, param) {
+      if (param === true) return arr.flat(1);
+      else return arr.flat(Infinity);
     },
     
     uniq: function(arr, isSorted, param) {
