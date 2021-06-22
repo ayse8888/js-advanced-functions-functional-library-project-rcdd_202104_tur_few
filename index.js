@@ -17,6 +17,9 @@ const fi = (function() {
     map: function(arr, param) {
       let newArr = []
       if(arr.length) newArr = arr.map(item => param(item))
+      else {
+        
+      }
     },
 
     reduce: function() {
