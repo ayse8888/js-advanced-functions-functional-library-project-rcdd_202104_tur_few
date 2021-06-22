@@ -59,11 +59,11 @@ const fi = (function() {
     },
     
      compact:  function(arr) {
-      let collection = [];
+      let compactArr = [];
       arr.forEach(item => {
-        if (element) collection.push(element);
+        if (item) compactArr.push(item);
       });
-      return collection;
+      return compactArr;
     },
 
     functions: function() {
