@@ -5,6 +5,7 @@ const fi = (function() {
     },
 
     each: function(arr, param) {
+      // if there is a length, it is an array. objects do not have a length.
       if(arr.length) arr.forEach(item => param(item))
       else {
         const values = Object.values(arr)
