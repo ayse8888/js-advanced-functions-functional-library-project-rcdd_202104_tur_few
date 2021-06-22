@@ -18,7 +18,7 @@ const fi = (function() {
       let newArr = []
       if(arr.length) newArr = arr.map(item => param(item))
       else {
-        
+        newArr = Object.values(arr).map(item => param(item))
       }
     },
 
