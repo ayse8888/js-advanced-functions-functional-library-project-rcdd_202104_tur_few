@@ -29,6 +29,10 @@ const fi = (function() {
       else newArr = arr.reduce(param);
       return newArr;
     },
+    
+    find:  function(array, callback) {
+      return array.find(callback);
+    },
 
     functions: function() {
 
