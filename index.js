@@ -103,8 +103,13 @@ const fi = (function() {
       return Object.values(object);
     },
 
-    functions: function() {
-
+     functions: function(object) {
+      let objectFunctions = [];
+      for(let key in object) {
+        if(typeof(object[key]) === 'function') objectFunctions.push(key);
+      }
+      objectFunctions.sort();
+      return objectFunctions;
     },
 
 
