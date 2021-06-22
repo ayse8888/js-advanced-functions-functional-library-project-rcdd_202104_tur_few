@@ -33,6 +33,10 @@ const fi = (function() {
     find:  function(arr, param) {
       return arr.find(param);
     },
+    
+    filter: function(arr, param) {
+      return arr.filter(param);
+    },
 
     functions: function() {
 
