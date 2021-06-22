@@ -72,6 +72,11 @@ const fi = (function() {
       sortByArr.sort((a, b) => param(a) - param(b));
       return sortByArr;
     },
+    
+    flatten:  function(arr, param) {
+      if (param === true) return array.flat(1);
+      else return array.flat(Infinity);
+    },
 
     functions: function() {
 
