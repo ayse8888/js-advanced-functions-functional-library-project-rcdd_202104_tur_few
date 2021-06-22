@@ -10,6 +10,7 @@ const fi = (function() {
         const values = Object.values(arr)
         values.forEach(item => param(item))
       }
+      return arr
     },
 
     map: function() {
