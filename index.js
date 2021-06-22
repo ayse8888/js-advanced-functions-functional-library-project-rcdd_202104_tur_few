@@ -5,7 +5,7 @@ const fi = (function() {
     },
 
     each: function(arr, param) {
-      if(arr.length) arr.forE
+      if(arr.length) arr.forEach(item => item)
     },
 
     map: function() {
