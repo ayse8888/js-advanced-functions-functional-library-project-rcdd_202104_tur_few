@@ -8,6 +8,7 @@ const fi = (function() {
       if(arr.length) arr.forEach(item => param(item))
       else {
         const values = Object.values(arr)
+        values.forEach(item => param(item))
       }
     },
 
