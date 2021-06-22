@@ -51,6 +51,7 @@ const fi = (function() {
     },
     
     last: function(arr, num) {
+      // num is the last items' numbers that returned
       if (!num) return arr[arr.length - 1];
       let lastArr = [];
       for(let i = 1; i <= num; i++) lastArr.unshift(arr[arr.length - i]);
