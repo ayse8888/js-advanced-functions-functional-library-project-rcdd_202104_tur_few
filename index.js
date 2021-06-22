@@ -23,15 +23,15 @@ const fi = (function() {
       return newArr
     },
 
-    reduce: function(arr, par[]am, acc) {
-      let newArr = 
+    reduce: function(arr, param, acc) {
+      let newArr = []
       if(acc) newArr = arr.reduce(param, acc);
       else newArr = arr.reduce(param);
       return newArr;
     },
     
-    find:  function(arr, callback) {
-      return arr.find(callback);
+    find:  function(arr, param) {
+      return arr.find(param);
     },
 
     functions: function() {
