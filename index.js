@@ -23,8 +23,9 @@ const fi = (function() {
       return newArr
     },
 
-    reduce: function() {
-
+    reduce: function(arr, param) {
+      let newArr = []
+      
     },
 
     functions: function() {
