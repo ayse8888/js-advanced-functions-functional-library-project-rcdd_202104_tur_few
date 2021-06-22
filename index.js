@@ -73,10 +73,20 @@ const fi = (function() {
       return sortByArr;
     },
     
-     flatten:  function(arr, param) {
-      if (param === true) return arr.flat(1);
-      else return arr.flat(Infinity);
-    },
+    flatten: function (arr, shallow, newArr = []) {
+       if (shallow) {
+         return newArr.concat.apply([], arr);
+       } else {
+         for (const element of arr) {
+           if (Array.isArray(element)) {
+             fi.flatten(element, false, newArr);
+           } else {
+             newArr.push(element);
+           }
+         }
+         return newArr;
+       }
+     },
     
     uniq: function(arr, isSorted, param) {
       if (param) {
