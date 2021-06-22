@@ -49,6 +49,13 @@ const fi = (function() {
       for(let i = 0; i < num; i++) firstArr.push(arr[i]);
       return firstArr;
     },
+    
+    last: function(arr, num) {
+      if (!num) return arr[arr.length - 1];
+      let lastArr = [];
+      for(let i = 1; i <= num; i++) lastArr.unshift(arr[arr.length - i]);
+      return lastArr;
+    },
 
     functions: function() {
 
