@@ -74,8 +74,8 @@ const fi = (function() {
     },
     
      flatten:  function(array, shallow) {
-      if (shallow === true) return array.flatten(1);
-      else return array.flatten(Infinity);
+      if (shallow === true) return array.flat(1);
+      else return array.flat(Infinity);
     },
     
     uniq: function(arr, isSorted, param) {
