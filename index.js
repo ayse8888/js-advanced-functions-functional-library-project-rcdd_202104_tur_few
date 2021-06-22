@@ -74,8 +74,8 @@ const fi = (function() {
     },
     
     flatten:  function(arr, param) {
-      if (param === true) return array.flat(1);
-      else return array.flat(Infinity);
+      if (param === true) return arr.flat(1);
+      else return arr.flat(Infinity);
     },
 
     functions: function() {
