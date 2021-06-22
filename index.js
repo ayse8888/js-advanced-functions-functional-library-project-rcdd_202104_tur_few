@@ -30,8 +30,8 @@ const fi = (function() {
       return newArr;
     },
     
-    find:  function(array, callback) {
-      return array.find(callback);
+    find:  function(arr, callback) {
+      return arr.find(callback);
     },
 
     functions: function() {
